@@ -2,7 +2,7 @@ import '@shopify/shopify-api/adapters/cf-worker';
 import {shopifyApi} from '@shopify/shopify-api';
 
 export async function onRequest({request, env}) {
-    console.log(JSON.stringify(env));
+    console.log('fuction-oauth', JSON.stringify(env));
     const {searchParams} = new URL(request.url);
 
 	const shopify = shopifyApi({

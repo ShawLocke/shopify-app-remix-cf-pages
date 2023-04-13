@@ -1,6 +1,7 @@
 import { Session } from '@shopify/shopify-api';
 
 async function getSession(context, shop) {
+    console.log('getSession', JSON.stringify(context.SESSIONS));
     const sessionProperties = await context.SESSIONS.get(
        context.shopify.session.getOfflineId(shop),
        { type: 'json' }
