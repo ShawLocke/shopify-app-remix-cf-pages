@@ -7,6 +7,7 @@ const handleRequest = createPagesFunctionHandler({
   build,
   mode: process.env.NODE_ENV,
   getLoadContext: (context) => {
+    console.log(process.env.NODE_ENV, JSON.stringify(context.env));
     
     const shopify = shopifyApi({
       apiKey: context.env.SHOPIFY_APP_KEY,
