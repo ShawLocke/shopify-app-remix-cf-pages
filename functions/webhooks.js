@@ -21,7 +21,7 @@ export async function onRequest({request, env}) {
         });
     }
     catch (error) {
-        console.log(error.message);
+        console.log('webhhooks', JSON.stringify(error));
         response = error.response;
     }
     return response;
