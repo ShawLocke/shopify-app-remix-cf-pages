@@ -1,7 +1,7 @@
 import { Session } from '@shopify/shopify-api';
 
 async function getSession(context, shop) {
-    console.log('getSession', JSON.stringify(context.SESSIONS));
+    console.log('getSession', JSON.stringify(context));
     if (!context.SESSIONS) {
     console.log('getSession-null-return');
       return null;
@@ -22,6 +22,7 @@ async function getSession(context, shop) {
 
 
 async function saveSession(context, session){
+  console.log('saveSession', JSON.stringify(context), JSON.stringify(session));
   return await context.SESSIONS.put(session.id, JSON.stringify(session.toPropertyArray()));
 }
 
