@@ -1,7 +1,2 @@
 compatibility_date = "2022-04-05"
 compatibility_flags = ["streams_enable_constructors"]
-
-[[kv_namespaces]]
-binding = "SESSIONS"
-id = "f876017cc6bc4a36bf4a3ef14ea09da6"
-preview_id = "f876017cc6bc4a36bf4a3ef14ea09da6"
