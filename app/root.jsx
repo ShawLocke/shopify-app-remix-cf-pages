@@ -26,7 +26,6 @@ export function links() {
 
 //AppBridgeProvider needs this.
 export const loader = async ({context}) => {
-  console.log('root.jsx', JSON.stringify(context));
   return json({
 		apiKey: context.SHOPIFY_APP_KEY,
 	});

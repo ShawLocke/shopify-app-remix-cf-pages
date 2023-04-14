@@ -16,7 +16,6 @@ export async function onRequest({request, env}) {
         rawRequest: request,
     });
     
-    console.log('callback.js', JSON.stringify(env), JSON.stringify(callback.session));
     await saveSession(env, callback.session);
 
     await shopify.webhooks.addHandlers(createWebhookHandlers({...env, shopify}));
