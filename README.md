@@ -25,9 +25,11 @@
 
 ## Deployment
 
-> You should seperate your development app and production app, use production app info
-> You can see logs by clicking `Begin log stream` under `<one specific deployment> / Functions / Real-time Logs`
-> You can see KV variable values by clicking `View` under `Workers / KV / <one specific namespace>`
+> 1. You should seperate your development app and production app, use production app info
+>
+> 1. You can see logs by clicking `Begin log stream` under `<one specific deployment> / Functions / Real-time Logs`
+>
+> 1. You can see KV variable values by clicking `View` under `Workers / KV / <one specific namespace>`
 
 1. create a [Cloudflare account](https://dash.cloudflare.com/sign-up/pages) if you don't have one.
 1. go to dashboard after verifying your email address with Cloudflare
